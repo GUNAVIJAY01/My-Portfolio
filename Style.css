@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none!important;
+}            
+.nav button{
+    
+    background-color: white;
+    color:black;
+    margin-right: 20px;
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+.nav button:hover{
+    background-color: rgb(94, 113, 171);
+    color:white;
+    border-radius: 10px;
+    display: inline-block;
+}
+body{
+    background-image: url("./Images/page-bg-1.jpg");
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+      
+                /* banner section */
+
+.ims img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}   
+.name{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.media a{
+    display: inline-block;
+    margin: 5px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+.media i{
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+}
+.cv{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: palevioletred;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin-top:8px;
+    border-radius:15px;
+}
+.cv:hover{
+    color:white;
+}
+
+.cv i{
+    color:white;
+}
+
+
+                /* Resume Section */
+
+.Ab{
+    background-color: white;
+    margin:10px 0;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.Resume-1{
+
+    position: relative;
+}
+.Resume-1 h3::after{
+        content:"";
+        position: absolute;
+        background: linear-gradient(90deg ,  blue, red);
+        height: 2px ;    
+        width: 200px;
+        left: 120px;
+        top:20px;
+    }                
+.Education{
+    background-color:rgba(290, 190, 263, 0.877);
+    padding: 10px;
+    border-radius:15px ;
+}
+.Educations{
+    background-color:rgba(150, 261, 250, 0.8);
+    padding: 10px;
+    border-radius:15px ;
+}
+
+.containers{
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+}
+.containers .skill-box{
+    width: 100%;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+.skill-box .skill-bar{
+    height: 5px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.1);
+    animation: anime 0.9s ease-in-out forwards;
+}
+
+@keyframes anime{
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background:#4070f4 ;
+}
+
+.skill-per .tool-tip{
+    position: absolute;
+    font-weight: 500;
+    right: -20px;
+    top: -35px;
+    background: #4070f4;
+    color: #fff;
+    padding: 2px 6px;
+    z-index: 1;
+}
+
+.tool-tip::before{
+    content: '';
+    position: absolute;
+    background: #4070f4;
+    height: 12px;
+    left: 50%;
+    width: 12px;
+    bottom: -2px;
+    transform:translateX(-50%)rotate(45deg) ;
+    z-index: -1;
+}
+.css{
+    width: 80%!important;
+    animation-delay: 0.1s;
+}.js{
+    width: 60%!important;
+    animation-delay: 0.2s;
+}.react{
+    width: 70%!important;
+    animation-delay: 0.3s;
+}
+.color{
+    background-color: #2fe0e026;
+    padding: 25px;
+    border-radius: 10px;
+}
+#Resume{
+    display: none;
+    margin-top:40px;
+}
+
+            /* About */
+
+.containerss{
+    overflow: hidden;
+}
+#About{
+    margin-top:40px;
+}
+.Abouts{
+    
+    border-radius: 15px;
+    
+}
+.Abouts h5{
+    position: relative;
+}
+
+.Abouts .ss::after{
+    content:"";
+    position: absolute;
+    background: linear-gradient(90deg ,  blue, red);
+    height: 2px ;    
+    width: 200px;
+    left: 120px;
+    top:15px;   
+}
+
+.text{
+    color:#4070f4;
+    position: relative;
+}
+.first-text{
+    color: black;
+}
+.sec-text{
+        color: #4070f4;
+}
+.text.sec-text::before{
+    content:"";
+    position: absolute;
+    left:0px;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background:white;
+    border-left: 4px solid #4070f4;
+    animation:ani 3s ease-in-out infinite;
+}
+
+@keyframes ani{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.ic{
+    box-shadow:0  0 6px #cdcd;
+    border-radius:15px ;
+    padding: 0 5px;
+}
+.ic:hover {
+    background:linear-gradient( rgb(129, 129, 238), rgb(245, 64, 64));
+    color:white!important;
+}
+#About{
+    display: none;
+}
+
+        /* #Works */
+
+.screen{
+    overflow: hidden!important;
+    border-radius: 15px;
+    box-shadow:9px 5px 14px lightblue;
+}
+.screen img{
+    transition: 0.4s ease-out all;
+}
+.screen:hover img{
+    transform: scale(1.08);
+    transition: 0.4s ease-in-out all;
+}
+#Works{
+    display: none;
+}
+
+.cs{
+    display: none;
+}
+#as button{
+    border: none;
+    width: 100%!important;
+    padding: 5px;
+    background-color: lightgray;
+    
+}
